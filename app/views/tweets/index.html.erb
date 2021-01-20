@@ -46,6 +46,21 @@
 
 
 
+</br>
+
+
+<% @tweets.each do |tweet|%>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+                <h5 class="card-title"><%=tweet.title%></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%=tweet.id%></h6>
+                <p class="card-text"><%=tweet.body%></p>   
+                <a href="#" class="card-link">Düzenle</a>
+                <a href="#" class="card-link">Sil</a>
+        </div>
+    </div>
+    </br>
+<% end %>
 
 
 
@@ -67,14 +82,6 @@
 
 
 
-
-
-
-
-
-
-
-  
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
