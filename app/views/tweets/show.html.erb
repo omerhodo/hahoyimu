@@ -1,0 +1,9 @@
+<h1><%= @tweet.title %></h1>
+<p><%= @tweet.body %></p>
+
+<ul>
+  <li><%= link_to "Düzenle", edit_tweet_path(@tweet) %></li>
+  <li><%= link_to "Sil", tweet_path(@tweet),
+                  method: :delete,
+                  data: { confirm: "Emin misiniz?" } %></li>
+</ul>
